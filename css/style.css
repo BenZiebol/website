@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ====== TABLES ====== */
+table {
+    border-collapse: collapse;
+    background-color: #fff;
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+    border: none;
+    padding: 12px 16px;
+    text-align: center;
+}
+
+th {
+    background-color: #2c3e50;
+    color: #fff;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* ====== IMAGES ====== */
+.image-large {
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.image-small {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* ====== NAVIGATION ====== */
+.navigation {
+    background-color: #2c3e50;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.navigation a {
+    color: #ecf0f1;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #1abc9c;
+}
+
+/* ====== FLEX CONTAINER ====== */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.flex-container > div {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    flex: 1 1 280px;
+    min-width: 240px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flex-container > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* ====== CLOCK ====== */
+.clock-box {
+    font-size: 20px;
+    background: #ecf0f1;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 15px auto;
+}
+
+#hour {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    width: 120px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ====== INFO BOXES ====== */
+.info {
+    background: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    min-height: 120px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.info-Aboutme {
+    background: #f0f0f0;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    min-height: 120px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* ====== GROW SECTIONS ====== */
+.grow {
+    border-radius: 10px;
+    padding: 10px;
+	height: 25px;
+    margin: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+    overflow: hidden;
+}
+
+.grow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    height: auto;
+}
+
+/* ====== TOOLTIP ====== */
+.moreInfo {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+}
+
+.moreInfo .moreInfoText {
+    visibility: hidden;
+    padding: 0.5em;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 0.25em;
+    white-space: nowrap;
+    position: absolute;
+    z-index: 1;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.moreInfo:hover .moreInfoText {
+    visibility: visible;
+    opacity: 1;
+}
